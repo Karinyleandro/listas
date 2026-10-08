@@ -7,8 +7,8 @@
     <title>Miídias</title>
 </head>
 
-<body>
-    <h1>Aula de mídias</h1>
+<body style="background-color: rgb(34, 141, 141);">
+    <h1 style="color: rgb(18, 17, 18); text-align: center;">Aula de mídias</h1>
 
     <h2>Imagem por caminhos</h2>
     <figure>
@@ -19,8 +19,20 @@
 
     </figure>
 
-    <h2>Audios</h2>
-    <audio src="files/audio.mp3" controls></audio>
+    <h2 id="musica">Uma música que eu gosto</h2>
+    <p>Escolhi esta faixa de música para acompanhar meus estudos</p>
+    <audio controls preload="metadata" src="files/audio.mp3">Seu navegador não oferece suporte ao elemento audio.</audio>
+    <p><a href="/midia/files/audio.mp3"></a>Abrir o arquivo de mídia</p>
+    <audio src="files/audio.mp3" controls muted></audio>
+
+    <h2>Vídeo</h2>
+    <video src="/midia/files/video.mp4" width="500" height="300" controls loop muted preload="none">O vídeo de está indisponível</video>
+    <video src="/midia/files/caminandes_3_trailer-1080p.mp4" width="500" height="300" controls muted preload="none">O vídeo de está indisponível</video>
+
+    <h2>Vídeo com capa</h2>
+    <video controls preload="metadata" width="640" poster="/midia/files/CAPA.png" src="/midia/files/caminandes_3_trailer-1080p.mp4" type="video/mp4">O vídeo de está indisponível</video>
+
+    <p><a href="/midia/files/caminandes_3_trailer-1080p.mp4">Abrir o vídeo</a></p>
 </body>
 
 </html>
